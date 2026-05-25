@@ -1,0 +1,322 @@
+# ============================================================
+# Netlify CMS — config.yml
+# Interface d'administration LORH Connect
+# Accessible sur : lorh-connect.com/admin
+# ============================================================
+
+backend:
+  name: git-gateway
+  branch: main  # ou master selon ton repo GitHub
+
+# Stockage des médias (photos véhicules, pièces)
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Affichage éditorial
+locale: fr
+
+collections:
+
+  # ========== CATALOGUE VÉHICULES ==========
+  - name: "vehicules"
+    label: "🚗 Véhicules"
+    label_singular: "Véhicule"
+    folder: "data/vehicules"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "titre"
+    summary: "{{marque}} {{modele}} — {{annee}} — {{statut}}"
+    preview_path: "/pages/automobile.html"
+
+    fields:
+
+      - label: "Titre (affiché sur le site)"
+        name: "titre"
+        widget: "string"
+        hint: "Ex : Toyota Land Cruiser 200"
+
+      - label: "Marque"
+        name: "marque"
+        widget: "select"
+        options:
+          - Toyota
+          - Mercedes
+          - BMW
+          - Peugeot
+          - Renault
+          - Volkswagen
+          - Ford
+          - Nissan
+          - Hyundai
+          - Kia
+          - Audi
+          - Land Rover
+          - Autre
+        hint: "Si la marque n'est pas dans la liste, choisir Autre"
+
+      - label: "Marque (si Autre)"
+        name: "marque_autre"
+        widget: "string"
+        required: false
+        hint: "Remplir uniquement si vous avez choisi Autre ci-dessus"
+
+      - label: "Modèle"
+        name: "modele"
+        widget: "string"
+        hint: "Ex : Land Cruiser 200"
+
+      - label: "Année"
+        name: "annee"
+        widget: "number"
+        min: 1990
+        max: 2026
+        value_type: "int"
+
+      - label: "Kilométrage (km)"
+        name: "kilometrage"
+        widget: "number"
+        min: 0
+        value_type: "int"
+
+      - label: "Énergie"
+        name: "energie"
+        widget: "select"
+        options:
+          - Diesel
+          - Essence
+          - Hybride
+          - Hybride rechargeable
+          - Électrique
+          - GPL
+
+      - label: "Transmission"
+        name: "transmission"
+        widget: "select"
+        options:
+          - Automatique
+          - Manuelle
+
+      - label: "Motorisation"
+        name: "motorisation"
+        widget: "string"
+        required: false
+        hint: "Ex : 4.5L V8 272ch"
+
+      - label: "Pays d'origine"
+        name: "pays_origine"
+        widget: "select"
+        options:
+          - Japon
+          - Allemagne
+          - France
+          - États-Unis
+          - Corée du Sud
+          - Italie
+          - Royaume-Uni
+          - Autre
+
+      - label: "Prix estimatif (€, frais inclus)"
+        name: "prix"
+        widget: "number"
+        min: 0
+        value_type: "int"
+        hint: "Prix tout compris (véhicule + import + taxes)"
+
+      - label: "Délai de livraison estimé"
+        name: "delai"
+        widget: "string"
+        hint: "Ex : 6–8 semaines"
+
+      - label: "Disponibilité"
+        name: "statut"
+        widget: "select"
+        options:
+          - label: "En stock"
+            value: "stock"
+          - label: "Sur commande"
+            value: "commande"
+          - label: "Vendu"
+            value: "vendu"
+
+      - label: "Photo principale"
+        name: "photo"
+        widget: "image"
+        required: false
+        hint: "Photo principale du véhicule (JPG ou PNG, min 800×500px)"
+
+      - label: "Photos supplémentaires"
+        name: "photos"
+        widget: "list"
+        required: false
+        field:
+          label: "Photo"
+          name: "photo"
+          widget: "image"
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        required: false
+        hint: "Description courte du véhicule (options, état, historique...)"
+
+      - label: "Publié (visible sur le site)"
+        name: "publie"
+        widget: "boolean"
+        default: true
+
+  # ========== CATALOGUE PIÈCES AUTO ==========
+  - name: "pieces"
+    label: "🔧 Pièces automobiles"
+    label_singular: "Pièce"
+    folder: "data/pieces"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "nom"
+    summary: "{{categorie}} — {{nom}} — {{marque_compatible}}"
+    preview_path: "/pages/pieces.html"
+
+    fields:
+
+      - label: "Nom de la pièce"
+        name: "nom"
+        widget: "string"
+        hint: "Ex : Plaquettes de frein avant"
+
+      - label: "Catégorie"
+        name: "categorie"
+        widget: "select"
+        options:
+          - Moteur
+          - Freinage
+          - Suspension
+          - Carrosserie
+          - Éclairage
+          - Électronique
+          - Pneus / Jantes
+          - Transmission
+          - Filtration
+          - Accessoires
+          - Refroidissement
+          - Échappement
+
+      - label: "Référence OEM"
+        name: "reference_oem"
+        widget: "string"
+        required: false
+        hint: "Référence constructeur d'origine (ex : 34116792217)"
+
+      - label: "Marque(s) compatible(s)"
+        name: "marque_compatible"
+        widget: "string"
+        hint: "Ex : BMW, Toyota, Renault"
+
+      - label: "Modèle(s) compatible(s)"
+        name: "modele_compatible"
+        widget: "text"
+        hint: "Ex : BMW X5 E70 (2007–2013), X5 F15 (2013–2018)"
+
+      - label: "Prix (€)"
+        name: "prix"
+        widget: "number"
+        min: 0
+        required: false
+        hint: "Laisser vide si prix sur devis uniquement"
+
+      - label: "Prix sur devis uniquement"
+        name: "prix_devis"
+        widget: "boolean"
+        default: false
+
+      - label: "Disponibilité"
+        name: "disponibilite"
+        widget: "select"
+        options:
+          - label: "En stock"
+            value: "stock"
+          - label: "Sur commande (3–7 jours)"
+            value: "commande"
+          - label: "Sur commande (> 7 jours)"
+            value: "commande_long"
+          - label: "Rupture de stock"
+            value: "rupture"
+
+      - label: "Quantité en stock"
+        name: "stock_qty"
+        widget: "number"
+        min: 0
+        required: false
+        value_type: "int"
+
+      - label: "Photo"
+        name: "photo"
+        widget: "image"
+        required: false
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        required: false
+
+      - label: "Publié"
+        name: "publie"
+        widget: "boolean"
+        default: true
+
+  # ========== CAMIONS ==========
+  - name: "camions"
+    label: "🚛 Camions"
+    label_singular: "Camion"
+    folder: "data/camions"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "nom"
+
+    fields:
+      - { label: "Nom", name: "nom", widget: "string" }
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options: [lourd, temperature, liquide, special, urbain]
+      - { label: "Capacité (m³)", name: "capacite_m3", widget: "number", required: false }
+      - { label: "Charge max (tonnes)", name: "charge_tonnes", widget: "number" }
+      - { label: "Longueur (m)", name: "longueur", widget: "string", required: false }
+      - { label: "Usage principal", name: "usage", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Disponible", name: "disponible", widget: "boolean", default: true }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+
+  # ========== TÉMOIGNAGES ==========
+  - name: "temoignages"
+    label: "⭐ Témoignages"
+    label_singular: "Témoignage"
+    folder: "data/temoignages"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+
+    fields:
+      - { label: "Nom du client", name: "nom", widget: "string" }
+      - { label: "Entreprise", name: "entreprise", widget: "string", required: false }
+      - { label: "Service utilisé", name: "service", widget: "select", options: [Transport, Automobile, "Pièces auto", "Import-Export"] }
+      - { label: "Note (1-5)", name: "note", widget: "number", min: 1, max: 5, value_type: "int" }
+      - { label: "Témoignage", name: "texte", widget: "text" }
+      - { label: "Publié", name: "publie", widget: "boolean", default: true }
+
+  # ========== PARAMÈTRES SITE ==========
+  - name: "settings"
+    label: "⚙️ Paramètres"
+    files:
+
+      - label: "Informations générales"
+        name: "general"
+        file: "data/settings/general.json"
+        fields:
+          - { label: "Numéro WhatsApp", name: "whatsapp", widget: "string", hint: "Format international sans + : ex 33612345678" }
+          - { label: "Email de contact", name: "email", widget: "string" }
+          - { label: "Téléphone", name: "telephone", widget: "string" }
+          - { label: "Adresse", name: "adresse", widget: "text", required: false }
+          - { label: "Texte hero (titre)", name: "hero_titre", widget: "string", default: "Votre partenaire logistique transport & automobile" }
+          - { label: "Texte hero (sous-titre)", name: "hero_sous_titre", widget: "text" }
