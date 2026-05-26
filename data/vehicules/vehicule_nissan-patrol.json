@@ -1,0 +1,16 @@
+{
+  "titre": "Nissan Patrol",
+  "marque": "Nissan",
+  "modele": "Patrol",
+  "annee": 2020,
+  "kilometrage": 90000,
+  "energie": "Essence",
+  "transmission": "Automatique",
+  "prix": 42000,
+  "delai": "6–10 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "SUV tout terrain",
+  "photo_url": "https://picsum.photos/id/200/800/500",
+  "photo": "https://picsum.photos/id/200/800/500"
+}

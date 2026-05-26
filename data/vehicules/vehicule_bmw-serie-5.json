@@ -1,0 +1,16 @@
+{
+  "titre": "BMW Série 5",
+  "marque": "BMW",
+  "modele": "Série 5",
+  "annee": 2021,
+  "kilometrage": 61000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "prix": 36500,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "Berline premium",
+  "photo_url": "https://picsum.photos/id/238/800/500",
+  "photo": "https://picsum.photos/id/238/800/500"
+}

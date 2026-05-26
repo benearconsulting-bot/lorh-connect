@@ -1,0 +1,16 @@
+{
+  "titre": "Hyundai Santa Fe",
+  "marque": "Hyundai",
+  "modele": "Santa Fe",
+  "annee": 2021,
+  "kilometrage": 70000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "prix": 29500,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "SUV premium",
+  "photo_url": "https://picsum.photos/id/169/800/500",
+  "photo": "https://picsum.photos/id/169/800/500"
+}

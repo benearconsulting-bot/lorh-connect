@@ -1,0 +1,16 @@
+{
+  "titre": "Kia Sorento",
+  "marque": "Kia",
+  "modele": "Sorento",
+  "annee": 2021,
+  "kilometrage": 69000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "prix": 31500,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "SUV familial",
+  "photo_url": "https://picsum.photos/id/193/800/500",
+  "photo": "https://picsum.photos/id/193/800/500"
+}

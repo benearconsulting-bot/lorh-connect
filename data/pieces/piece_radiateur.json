@@ -1,0 +1,13 @@
+{
+  "titre": "Radiateur",
+  "marque": "Multi-marques",
+  "reference": "PA-0015",
+  "categorie": "Refroidissement",
+  "compatibilite": "Selon moteur",
+  "prix": null,
+  "delai": "2–4 semaines",
+  "statut": "sur_demande",
+  "publie": true,
+  "photo_url": "https://picsum.photos/id/140/800/500",
+  "photo": "https://picsum.photos/id/140/800/500"
+}

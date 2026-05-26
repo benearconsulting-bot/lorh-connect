@@ -1,0 +1,16 @@
+{
+  "titre": "Toyota Yaris",
+  "marque": "Toyota",
+  "modele": "Yaris",
+  "annee": 2022,
+  "kilometrage": 40000,
+  "energie": "Essence",
+  "transmission": "Automatique",
+  "prix": 13500,
+  "delai": "4–6 semaines",
+  "statut": "stock",
+  "publie": true,
+  "categorie": "Citadine",
+  "photo_url": "https://picsum.photos/id/137/800/500",
+  "photo": "https://picsum.photos/id/137/800/500"
+}

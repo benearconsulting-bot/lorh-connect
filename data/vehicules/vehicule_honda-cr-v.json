@@ -1,0 +1,16 @@
+{
+  "titre": "Honda CR-V",
+  "marque": "Honda",
+  "modele": "CR-V",
+  "annee": 2021,
+  "kilometrage": 63000,
+  "energie": "Essence",
+  "transmission": "Automatique",
+  "prix": 27500,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "SUV",
+  "photo_url": "https://picsum.photos/id/260/800/500",
+  "photo": "https://picsum.photos/id/260/800/500"
+}

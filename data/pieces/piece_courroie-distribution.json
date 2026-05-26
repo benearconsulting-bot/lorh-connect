@@ -1,0 +1,13 @@
+{
+  "nom": "Courroie de distribution",
+  "categorie": "Moteur",
+  "reference_oem": "PA-0017",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon moteur",
+  "prix_devis": true,
+  "disponibilite": "commande",
+  "description": "Courroies de distribution et kits complets.",
+  "publie": true,
+  "photo_url": "https://picsum.photos/id/160/800/500",
+  "photo": "https://picsum.photos/id/160/800/500"
+}
