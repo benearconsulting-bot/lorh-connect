@@ -1,0 +1,15 @@
+{
+  "nom": "Plaquettes de frein avant",
+  "categorie": "Freinage",
+  "reference_oem": "34116792217",
+  "marque_compatible": "BMW",
+  "modele_compatible": "BMW X5 E70 (2007–2013), X5 F15 (2013–2018)",
+  "prix": 85,
+  "prix_devis": false,
+  "disponibilite": "stock",
+  "stock_qty": 6,
+  "photo": "",
+  "description": "Plaquettes de frein avant d'origine OEM, compatibles X5 E70 et F15.",
+  "publie": true,
+  "photo_url": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800"
+}

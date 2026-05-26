@@ -1,0 +1,12 @@
+{
+  "nom": "Bougies d'allumage",
+  "categorie": "Moteur",
+  "reference_oem": "PA-0008",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Moteurs essence",
+  "prix_devis": true,
+  "disponibilite": "commande",
+  "description": "Bougies d'allumage pour moteurs essence.",
+  "publie": true,
+  "photo_url": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800"
+}

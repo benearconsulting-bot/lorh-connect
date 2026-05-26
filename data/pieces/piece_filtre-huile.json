@@ -1,0 +1,12 @@
+{
+  "nom": "Filtre à huile",
+  "categorie": "Filtration",
+  "reference_oem": "PA-0006",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon moteur",
+  "prix_devis": true,
+  "disponibilite": "commande",
+  "description": "Filtres à huile pour moteurs essence et diesel.",
+  "publie": true,
+  "photo_url": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800"
+}

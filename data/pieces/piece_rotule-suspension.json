@@ -1,0 +1,12 @@
+{
+  "nom": "Rotule de suspension",
+  "categorie": "Suspension",
+  "reference_oem": "PA-0020",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon véhicule",
+  "prix_devis": true,
+  "disponibilite": "commande",
+  "description": "Rotules de suspension et direction selon véhicule.",
+  "publie": true,
+  "photo_url": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800"
+}
