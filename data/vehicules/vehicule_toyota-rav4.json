@@ -1,0 +1,16 @@
+{
+  "titre": "Toyota RAV4",
+  "marque": "Toyota",
+  "modele": "RAV4",
+  "annee": 2021,
+  "kilometrage": 60000,
+  "energie": "Hybride",
+  "transmission": "Automatique",
+  "prix": 28000,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "SUV compact",
+  "photo_url": "/images/vehicles/2021_Toyota_RAV4_PHV.jpg",
+  "photo": "/images/vehicles/2021_Toyota_RAV4_PHV.jpg"
+}

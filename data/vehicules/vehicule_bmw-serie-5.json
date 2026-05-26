@@ -1,0 +1,16 @@
+{
+  "titre": "BMW Série 5",
+  "marque": "BMW",
+  "modele": "Série 5",
+  "annee": 2021,
+  "kilometrage": 61000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "prix": 36500,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "Berline premium",
+  "photo_url": "/images/vehicles/2021_BMW_5-Series_520d_M_Sport.jpg",
+  "photo": "/images/vehicles/2021_BMW_5-Series_520d_M_Sport.jpg"
+}
