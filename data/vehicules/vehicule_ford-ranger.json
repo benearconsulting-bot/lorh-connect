@@ -1,0 +1,15 @@
+{
+  "titre": "Ford Ranger",
+  "marque": "Ford",
+  "modele": "Ranger",
+  "annee": 2022,
+  "kilometrage": 62000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "prix": 32500,
+  "delai": "6–8 semaines",
+  "statut": "stock",
+  "publie": true,
+  "categorie": "Pick-up",
+  "photo_url": "https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=800"
+}

@@ -1,0 +1,15 @@
+{
+  "titre": "Hyundai Tucson",
+  "marque": "Hyundai",
+  "modele": "Tucson",
+  "annee": 2022,
+  "kilometrage": 45000,
+  "energie": "Essence",
+  "transmission": "Automatique",
+  "prix": 24500,
+  "delai": "4–6 semaines",
+  "statut": "stock",
+  "publie": true,
+  "categorie": "SUV",
+  "photo_url": "https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&w=800"
+}

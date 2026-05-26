@@ -1,0 +1,19 @@
+{
+  "titre": "Toyota Land Cruiser 200",
+  "marque": "Toyota",
+  "modele": "Land Cruiser 200",
+  "annee": 2022,
+  "kilometrage": 45000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "motorisation": "4.5L V8 272ch",
+  "pays_origine": "Japon",
+  "prix": 38500,
+  "delai": "6–8 semaines",
+  "statut": "stock",
+  "photo": "",
+  "photos": [],
+  "description": "Véhicule en excellent état, full options, carnet d'entretien complet.",
+  "publie": true,
+  "photo_url": "https://images.pexels.com/photos/1035108/pexels-photo-1035108.jpeg?auto=compress&cs=tinysrgb&w=800"
+}

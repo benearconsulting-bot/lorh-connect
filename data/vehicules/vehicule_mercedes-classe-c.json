@@ -1,0 +1,15 @@
+{
+  "titre": "Mercedes Classe C",
+  "marque": "Mercedes-Benz",
+  "modele": "Classe C",
+  "annee": 2021,
+  "kilometrage": 58000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "prix": 34500,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "Berline premium",
+  "photo_url": "https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=800"
+}
