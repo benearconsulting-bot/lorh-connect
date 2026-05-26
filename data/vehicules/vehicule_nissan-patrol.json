@@ -1,0 +1,16 @@
+{
+  "titre": "Nissan Patrol",
+  "marque": "Nissan",
+  "modele": "Patrol",
+  "annee": 2020,
+  "kilometrage": 90000,
+  "energie": "Essence",
+  "transmission": "Automatique",
+  "prix": 42000,
+  "delai": "6–10 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "SUV tout terrain",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nissan_Patrol_2020_facelift.jpg/800px-Nissan_Patrol_2020_facelift.jpg",
+  "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nissan_Patrol_2020_facelift.jpg/800px-Nissan_Patrol_2020_facelift.jpg"
+}
