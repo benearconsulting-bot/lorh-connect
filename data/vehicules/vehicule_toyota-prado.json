@@ -1,0 +1,16 @@
+{
+  "titre": "Toyota Prado",
+  "marque": "Toyota",
+  "modele": "Prado",
+  "annee": 2021,
+  "kilometrage": 72000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "prix": 36000,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "SUV",
+  "photo_url": "/images/vehicles/toyota-prado.jpg",
+  "photo": "/images/vehicles/toyota-prado.jpg"
+}
