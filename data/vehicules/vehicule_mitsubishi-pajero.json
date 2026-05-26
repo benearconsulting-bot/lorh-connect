@@ -1,0 +1,16 @@
+{
+  "titre": "Mitsubishi Pajero",
+  "marque": "Mitsubishi",
+  "modele": "Pajero",
+  "annee": 2019,
+  "kilometrage": 95000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "prix": 27500,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "SUV",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/2019_pajero_final_edition_rear.jpg/800px-2019_pajero_final_edition_rear.jpg",
+  "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/2019_pajero_final_edition_rear.jpg/800px-2019_pajero_final_edition_rear.jpg"
+}

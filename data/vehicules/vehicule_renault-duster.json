@@ -1,0 +1,16 @@
+{
+  "titre": "Renault Duster",
+  "marque": "Renault",
+  "modele": "Duster",
+  "annee": 2021,
+  "kilometrage": 68000,
+  "energie": "Essence",
+  "transmission": "Manuelle",
+  "prix": 14500,
+  "delai": "4–6 semaines",
+  "statut": "stock",
+  "publie": true,
+  "categorie": "SUV économique",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Renault_Duster_II_in_Tomsk_01.jpg/800px-Renault_Duster_II_in_Tomsk_01.jpg",
+  "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Renault_Duster_II_in_Tomsk_01.jpg/800px-Renault_Duster_II_in_Tomsk_01.jpg"
+}

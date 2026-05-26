@@ -1,0 +1,16 @@
+{
+  "titre": "Nissan Navara",
+  "marque": "Nissan",
+  "modele": "Navara",
+  "annee": 2021,
+  "kilometrage": 78000,
+  "energie": "Diesel",
+  "transmission": "Manuelle",
+  "prix": 26500,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "Pick-up",
+  "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/2021_Nissan_Navara_facelift.jpg/800px-2021_Nissan_Navara_facelift.jpg",
+  "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/2021_Nissan_Navara_facelift.jpg/800px-2021_Nissan_Navara_facelift.jpg"
+}
