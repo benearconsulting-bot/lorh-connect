@@ -1,0 +1,15 @@
+{
+  "titre": "Renault Duster",
+  "marque": "Renault",
+  "modele": "Duster",
+  "annee": 2021,
+  "kilometrage": 68000,
+  "energie": "Essence",
+  "transmission": "Manuelle",
+  "prix": 14500,
+  "delai": "4–6 semaines",
+  "statut": "stock",
+  "publie": true,
+  "categorie": "SUV économique",
+  "photo_url": "https://source.unsplash.com/1200x800/?renault,duster,suv"
+}

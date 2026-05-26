@@ -1,0 +1,15 @@
+{
+  "titre": "Toyota Land Cruiser V8",
+  "marque": "Toyota",
+  "modele": "Land Cruiser V8",
+  "annee": 2020,
+  "kilometrage": 85000,
+  "energie": "Diesel",
+  "transmission": "Automatique",
+  "prix": 52000,
+  "delai": "6–10 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "SUV premium",
+  "photo_url": "https://source.unsplash.com/1200x800/?toyota,land-cruiser,suv"
+}

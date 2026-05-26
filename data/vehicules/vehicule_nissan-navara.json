@@ -1,0 +1,15 @@
+{
+  "titre": "Nissan Navara",
+  "marque": "Nissan",
+  "modele": "Navara",
+  "annee": 2021,
+  "kilometrage": 78000,
+  "energie": "Diesel",
+  "transmission": "Manuelle",
+  "prix": 26500,
+  "delai": "6–8 semaines",
+  "statut": "sur_commande",
+  "publie": true,
+  "categorie": "Pick-up",
+  "photo_url": "https://source.unsplash.com/1200x800/?nissan,navara,pickup"
+}
