@@ -1,0 +1,11 @@
+{
+  "nom": "Amortisseur",
+  "slug": "amortisseur",
+  "categorie": "Suspension",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Amortisseur — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

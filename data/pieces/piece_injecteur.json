@@ -1,0 +1,11 @@
+{
+  "nom": "Injecteur",
+  "slug": "injecteur",
+  "categorie": "Moteur",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Injecteur — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

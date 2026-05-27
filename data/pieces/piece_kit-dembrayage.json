@@ -1,0 +1,11 @@
+{
+  "nom": "Kit d'embrayage",
+  "slug": "kit-dembrayage",
+  "categorie": "Transmission",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Kit d'embrayage — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

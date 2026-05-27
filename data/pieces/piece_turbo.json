@@ -1,0 +1,11 @@
+{
+  "nom": "Turbo",
+  "slug": "turbo",
+  "categorie": "Moteur",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Turbo — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

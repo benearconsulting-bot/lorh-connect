@@ -1,0 +1,11 @@
+{
+  "nom": "Sonde lambda",
+  "slug": "sonde-lambda",
+  "categorie": "Électronique",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Sonde lambda — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

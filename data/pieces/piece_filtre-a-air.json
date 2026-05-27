@@ -1,0 +1,11 @@
+{
+  "nom": "Filtre à air",
+  "slug": "filtre-a-air",
+  "categorie": "Pièces automobiles",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Filtre à air — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

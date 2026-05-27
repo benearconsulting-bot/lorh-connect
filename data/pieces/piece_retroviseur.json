@@ -1,0 +1,11 @@
+{
+  "nom": "Rétroviseur",
+  "slug": "retroviseur",
+  "categorie": "Carrosserie",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Rétroviseur — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

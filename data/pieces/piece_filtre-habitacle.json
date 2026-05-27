@@ -1,0 +1,11 @@
+{
+  "nom": "Filtre habitacle",
+  "slug": "filtre-habitacle",
+  "categorie": "Filtration",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Filtre habitacle — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

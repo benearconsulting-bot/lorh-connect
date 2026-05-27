@@ -1,0 +1,11 @@
+{
+  "nom": "Ressort suspension",
+  "slug": "ressort-suspension",
+  "categorie": "Suspension",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Ressort suspension — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

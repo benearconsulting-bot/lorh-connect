@@ -1,0 +1,11 @@
+{
+  "nom": "Corps papillon",
+  "slug": "corps-papillon",
+  "categorie": "Moteur",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Corps papillon — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}

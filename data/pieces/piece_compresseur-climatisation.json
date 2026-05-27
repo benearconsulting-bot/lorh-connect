@@ -1,0 +1,11 @@
+{
+  "nom": "Compresseur climatisation",
+  "slug": "compresseur-climatisation",
+  "categorie": "Refroidissement",
+  "marque_compatible": "Multi-marques",
+  "modele_compatible": "Selon marque et modèle",
+  "prix_devis": true,
+  "disponibilite": "stock",
+  "description": "Compresseur climatisation — disponible sur commande. Devis sous 24h.",
+  "publie": true
+}
