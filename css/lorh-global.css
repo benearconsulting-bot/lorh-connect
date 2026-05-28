@@ -65,7 +65,7 @@ a  { color: inherit; }
 .lorh-nav__logo {
   display: flex;
   align-items: center;
-  gap: 1px;
+  gap: 6px;
   text-decoration: none;
   flex-shrink: 0;
 }
