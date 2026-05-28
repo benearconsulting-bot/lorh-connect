@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catalogue véhicules LORH Connect — Importation automobile Europe et Afrique">
+  <title>Catalogue Automobile — LORH Connect</title>
+  <link rel="stylesheet" href="../css/lorh-global.css">
+</head>
+<body>
+
+  <header class="lorh-nav">
+    <a href="/" class="lorh-nav__logo"><span class="lorh-nav__logo-text">LORH<span>Connect</span></span></a>
+    <nav><ul class="lorh-nav__links">
+      <li><a href="transport.html">Transport</a></li>
+      <li><a href="automobile.html" style="color:var(--lorh-navy);font-weight:500">Automobile</a></li>
+      <li><a href="pieces.html">Pièces auto</a></li>
+      <li><a href="import-export.html">Import-Export</a></li>
+      <li><a href="devis.html">Devis</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <div class="lorh-nav__cta">
+      <a href="devis.html?service=automobile" class="lorh-btn lorh-btn--blue">Demande sur mesure</a>
+    </div>
+    <button class="lorh-burger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </header>
+  <div class="lorh-mobile-menu" id="mobile-menu">
+    <a href="transport.html">🚛 Transport</a>
+    <a href="automobile.html">🚗 Automobile</a>
+    <a href="pieces.html">🔧 Pièces auto</a>
+    <a href="import-export.html">🌍 Import-Export</a>
+    <a href="devis.html">📋 Devis</a>
+    <a href="contact.html">✉️ Contact</a>
+  </div>
+
+  <main>
+
+    <!-- En-tête page -->
+    <div style="background:var(--lorh-navy);padding:48px 40px 40px;text-align:center">
+      <h1 style="font-size:36px;font-weight:700;color:#fff;margin-bottom:10px">Catalogue véhicules</h1>
+      <p style="font-size:16px;color:var(--lorh-blue-mid);max-width:500px;margin:0 auto">
+        Véhicules disponibles à l'importation — prix estimatifs frais inclus
+      </p>
+    </div>
+
+    <!-- Filtres -->
+    <div class="lorh-filters" id="filtres-zone">
+      <button class="lorh-filter-pill active" onclick="filtrerVehicules('tous', this)">Tous</button>
+      <button class="lorh-filter-pill" onclick="filtrerVehicules('stock', this)">En stock</button>
+      <button class="lorh-filter-pill" onclick="filtrerVehicules('commande', this)">Sur commande</button>
+      <div style="width:1px;background:var(--lorh-gray-200);margin:0 4px"></div>
+      <select id="filtre-energie" onchange="appliquerFiltres()" style="padding:7px 14px;font-size:13px;border:1px solid var(--lorh-gray-200);border-radius:20px;background:#fff;color:var(--lorh-gray-600)">
+        <option value="">Toutes énergies</option>
+        <option>Diesel</option>
+        <option>Essence</option>
+        <option>Hybride</option>
+        <option>Électrique</option>
+      </select>
+      <select id="filtre-transmission" onchange="appliquerFiltres()" style="padding:7px 14px;font-size:13px;border:1px solid var(--lorh-gray-200);border-radius:20px;background:#fff;color:var(--lorh-gray-600)">
+        <option value="">Toutes transmissions</option>
+        <option>Automatique</option>
+        <option>Manuelle</option>
+      </select>
+      <select id="filtre-marque" onchange="appliquerFiltres()" style="padding:7px 14px;font-size:13px;border:1px solid var(--lorh-gray-200);border-radius:20px;background:#fff;color:var(--lorh-gray-600)">
+        <option value="">Toutes marques</option>
+      </select>
+    </div>
+
+    <!-- Compteur résultats -->
+    <div style="padding:12px 40px;font-size:13px;color:var(--lorh-gray-600);border-bottom:1px solid var(--lorh-gray-200)">
+      <span id="compteur-vehicules">Chargement...</span>
+    </div>
+
+    <!-- Grille véhicules -->
+    <div class="lorh-vehicles-grid" id="grille-vehicules">
+      <!-- Chargement -->
+      <div id="loading-vehicules" style="grid-column:1/-1;text-align:center;padding:60px;color:var(--lorh-gray-600)">
+        <div style="font-size:32px;margin-bottom:12px">⏳</div>
+        Chargement du catalogue...
+      </div>
+    </div>
+
+    <!-- Pas de résultat -->
+    <div id="empty-vehicules" style="display:none;text-align:center;padding:60px 20px">
+      <div style="font-size:48px;margin-bottom:16px">🔍</div>
+      <p style="font-size:16px;color:var(--lorh-gray-600);margin-bottom:20px">Aucun véhicule ne correspond à ces critères.</p>
+      <button class="lorh-btn lorh-btn--outline" onclick="resetFiltres()">Réinitialiser les filtres</button>
+    </div>
+
+    <!-- CTA demande sur mesure -->
+    <div class="lorh-section lorh-section--gray">
+      <div style="max-width:600px;margin:0 auto;text-align:center">
+        <div style="font-size:40px;margin-bottom:16px">🎯</div>
+        <h2 style="font-size:24px;font-weight:700;color:var(--lorh-navy);margin-bottom:10px">Vous ne trouvez pas le véhicule souhaité ?</h2>
+        <p style="font-size:15px;color:var(--lorh-gray-600);margin-bottom:24px">
+          Décrivez-nous le véhicule de vos rêves — marque, modèle, budget — et nous le sourçons pour vous à l'international.
+        </p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+          <a href="devis.html?service=automobile" class="lorh-btn lorh-btn--blue">Faire une demande sur mesure →</a>
+          <a href="https://wa.me/2250708908162?text=Bonjour+LORH+Connect%2C+je+cherche+un+v%C3%A9hicule+%C3%A0+importer." target="_blank" class="lorh-btn lorh-btn--wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer identique index.html -->
+  <footer class="lorh-footer">
+    <div class="lorh-footer__grid">
+      <div>
+        <img src="../images/logo.jpeg" alt="LORH Connect" style="height:64px;margin-bottom:14px;">
+        <p style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6;max-width:220px">Votre partenaire logistique Europe-Afrique.</p>
+      </div>
+      <div>
+        <div class="lorh-footer__col-title">Services</div>
+        <a href="transport.html" class="lorh-footer__link">Transport</a>
+        <a href="automobile.html" class="lorh-footer__link">Automobile</a>
+        <a href="pieces.html" class="lorh-footer__link">Pièces auto</a>
+        <a href="import-export.html" class="lorh-footer__link">Import-Export</a>
+      </div>
+      <div>
+        <div class="lorh-footer__col-title">Devis</div>
+        <a href="devis.html?service=transport" class="lorh-footer__link">Devis transport</a>
+        <a href="devis.html?service=automobile" class="lorh-footer__link">Demande auto</a>
+        <a href="devis.html?service=pieces" class="lorh-footer__link">Demande pièces</a>
+        <a href="devis.html?service=import" class="lorh-footer__link">Import-Export</a>
+      </div>
+      <div>
+        <div class="lorh-footer__col-title">Contact</div>
+        <a href="contact.html" class="lorh-footer__link">Nous contacter</a>
+        <a href="https://wa.me/2250708908162" target="_blank" class="lorh-footer__link">WhatsApp</a>
+        <a href="mailto:serviceclient@lorhconnect.com" class="lorh-footer__link">Email</a>
+      </div>
+    </div>
+    <div class="lorh-footer__bottom">
+      <span>© 2025 LORH Connect</span>
+      <a href="mentions-legales.html" class="lorh-footer__link" style="display:inline">Mentions légales</a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2250708908162?text=Bonjour+LORH+Connect%2C+je+suis+int%C3%A9ress%C3%A9+par+votre+catalogue+automobile." target="_blank" class="lorh-wa-float" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="lorh-wa-float__label">WhatsApp</span>
+  </a>
+
+  <script src="../js/lorh-global.js"></script>
+  <script>
+
+    // ============================================================
+    // Lecture des fichiers JSON du catalogue (générés par Netlify CMS)
+    // Chaque véhicule = un fichier JSON dans /data/vehicules/
+    // ============================================================
+
+    var tousVehicules = [];
+    var filtreActif   = 'tous';
+
+    // Liste des fichiers JSON — mise à jour automatique via Netlify CMS
+    // Netlify CMS crée automatiquement ces fichiers quand tu ajoutes un véhicule
+    var fichiersVehicules = [
+      '../data/vehicules/toyota-land-cruiser-200.json'
+      // Netlify CMS ajoutera automatiquement les nouveaux fichiers ici
+      // via un script de génération (voir lorh-catalogue.js)
+    ];
+
+    // Charger tous les véhicules
+    async function chargerVehicules() {
+      try {
+        // Charger l'index des véhicules (généré automatiquement)
+        var response = await fetch('../data/vehicules/index.json');
+        if (response.ok) {
+          var index = await response.json();
+          fichiersVehicules = index.map(function(f) { return '../data/vehicules/' + f; });
+        }
+      } catch(e) {
+        // Pas d'index — on utilise la liste manuelle ci-dessus
+      }
+
+      var promesses = fichiersVehicules.map(function(fichier) {
+        return fetch(fichier).then(function(r) { return r.json(); }).catch(function() { return null; });
+      });
+
+      var resultats = await Promise.all(promesses);
+      tousVehicules = resultats.filter(function(v) { return v && v.publie !== false; });
+
+      // Peupler le filtre marques
+      var marques = [...new Set(tousVehicules.map(function(v) { return v.marque_autre || v.marque; }))].sort();
+      var selectMarque = document.getElementById('filtre-marque');
+      marques.forEach(function(m) {
+        var opt = document.createElement('option');
+        opt.value = m; opt.textContent = m;
+        selectMarque.appendChild(opt);
+      });
+
+      afficherVehicules(tousVehicules);
+    }
+
+    function afficherVehicules(vehicules) {
+      var grille   = document.getElementById('grille-vehicules');
+      var loading  = document.getElementById('loading-vehicules');
+      var empty    = document.getElementById('empty-vehicules');
+      var compteur = document.getElementById('compteur-vehicules');
+
+      if (loading) loading.style.display = 'none';
+
+      if (vehicules.length === 0) {
+        grille.innerHTML = '';
+        empty.style.display = 'block';
+        compteur.textContent = 'Aucun véhicule trouvé';
+        return;
+      }
+
+      empty.style.display = 'none';
+      compteur.textContent = vehicules.length + ' véhicule' + (vehicules.length > 1 ? 's' : '') + ' disponible' + (vehicules.length > 1 ? 's' : '');
+
+      grille.innerHTML = vehicules.map(function(v) {
+        var marque  = v.marque_autre || v.marque;
+        var statut  = v.statut === 'stock' ? '<span class="lorh-badge lorh-badge--stock">En stock</span>' :
+                      v.statut === 'vendu' ? '<span class="lorh-badge" style="background:#f5e0e0;color:#7a1f1f">Vendu</span>' :
+                      '<span class="lorh-badge lorh-badge--order">Sur commande</span>';
+        var energie = '<span class="lorh-badge lorh-badge--energy">' + v.energie + '</span>';
+        var trans   = '<span class="lorh-badge lorh-badge--trans">' + v.transmission + '</span>';
+        var photoSrc = v.photo || v.photo_url || '';
+        // Icônes par catégorie
+        var icone = v.categorie && v.categorie.toLowerCase().indexOf('pick') !== -1 ? '🛻'
+                  : v.categorie && v.categorie.toLowerCase().indexOf('berline') !== -1 ? '🚗'
+                  : v.categorie && v.categorie.toLowerCase().indexOf('citadine') !== -1 ? '🚙'
+                  : '🚙';
+        var photo = photoSrc
+          ? '<img src="' + photoSrc + '" alt="' + v.titre + '" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="this.parentNode.innerHTML=\'<div style=&quot;width:100%;height:100%;background:linear-gradient(135deg,#0D1F3C,#1E7CC8);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px&quot;><span style=&quot;font-size:48px&quot;>' + icone + '</span><span style=&quot;color:#fff;font-size:14px;font-weight:600;text-align:center;padding:0 12px&quot;>' + v.titre + '</span></div>\'">'
+          : '<div style="width:100%;height:100%;background:linear-gradient(135deg,#0D1F3C,#1E7CC8);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px"><span style="font-size:48px">' + icone + '</span><span style="color:#fff;font-size:14px;font-weight:600;text-align:center;padding:0 12px">' + v.titre + '</span></div>';
+        var prix    = v.prix ? v.prix.toLocaleString('fr-FR') + ' €' : 'Prix sur devis';
+        var waMsg   = encodeURIComponent('Bonjour LORH Connect, je suis intéressé par : ' + v.titre + ' (' + v.annee + '). Pouvez-vous me donner plus d\'informations ?');
+
+        return '<div class="lorh-vehicle-card" data-statut="' + v.statut + '" data-energie="' + v.energie + '" data-transmission="' + v.transmission + '" data-marque="' + marque + '">' +
+          '<div class="lorh-vehicle-card__img">' + photo + '</div>' +
+          '<div class="lorh-vehicle-card__body">' +
+            '<div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px">' + statut + energie + trans + '</div>' +
+            '<h3 style="font-size:16px;font-weight:600;color:var(--lorh-navy);margin-bottom:4px">' + v.titre + '</h3>' +
+            '<p style="font-size:13px;color:var(--lorh-gray-600);margin-bottom:12px">' + v.annee + ' · ' + (v.kilometrage ? v.kilometrage.toLocaleString('fr-FR') + ' km' : '—') + ' · ' + (v.pays_origine || '') + '</p>' +
+            '<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:14px">' +
+              '<div style="background:var(--lorh-gray-50);padding:7px 10px;border-radius:8px"><div style="font-size:10px;color:var(--lorh-gray-600)">Moteur</div><div style="font-size:12px;font-weight:600;color:var(--lorh-navy)">' + (v.motorisation || '—') + '</div></div>' +
+              '<div style="background:var(--lorh-gray-50);padding:7px 10px;border-radius:8px"><div style="font-size:10px;color:var(--lorh-gray-600)">Délai</div><div style="font-size:12px;font-weight:600;color:var(--lorh-navy)">' + (v.delai || '—') + '</div></div>' +
+            '</div>' +
+            '<div style="font-size:13px;color:var(--lorh-gray-600);margin-bottom:14px">À partir de <strong style="font-size:18px;color:var(--lorh-navy)">' + prix + '</strong> <span style="font-size:11px">(frais inclus)</span></div>' +
+            (v.statut !== 'vendu' ?
+              '<a href="devis.html?service=automobile&vehicule=' + encodeURIComponent(v.titre) + '" class="lorh-btn lorh-btn--blue" style="width:100%;justify-content:center;margin-bottom:8px">Je suis intéressé →</a>' +
+              '<a href="https://wa.me/2250708908162?text=' + waMsg + '" target="_blank" class="lorh-btn lorh-btn--wa" style="width:100%;justify-content:center;font-size:13px">' +
+                '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>' +
+                'Demander via WhatsApp</a>'
+              : '<div style="text-align:center;padding:10px;font-size:13px;color:var(--lorh-gray-600);background:var(--lorh-gray-100);border-radius:8px">Véhicule vendu — <a href="devis.html?service=automobile" style="color:var(--lorh-blue)">Demande similaire ?</a></div>'
+            ) +
+          '</div>' +
+        '</div>';
+      }).join('');
+    }
+
+    function filtrerVehicules(statut, btn) {
+      filtreActif = statut;
+      document.querySelectorAll('.lorh-filter-pill').forEach(function(p) { p.classList.remove('active'); });
+      if (btn) btn.classList.add('active');
+      appliquerFiltres();
+    }
+
+    function appliquerFiltres() {
+      var energie     = document.getElementById('filtre-energie').value;
+      var transmission = document.getElementById('filtre-transmission').value;
+      var marque      = document.getElementById('filtre-marque').value;
+
+      var filtres = tousVehicules.filter(function(v) {
+        if (filtreActif !== 'tous' && v.statut !== filtreActif) return false;
+        if (energie && v.energie !== energie) return false;
+        if (transmission && v.transmission !== transmission) return false;
+        if (marque && (v.marque_autre || v.marque) !== marque) return false;
+        return true;
+      });
+
+      afficherVehicules(filtres);
+    }
+
+    function resetFiltres() {
+      filtreActif = 'tous';
+      document.getElementById('filtre-energie').value = '';
+      document.getElementById('filtre-transmission').value = '';
+      document.getElementById('filtre-marque').value = '';
+      document.querySelectorAll('.lorh-filter-pill').forEach(function(p) { p.classList.remove('active'); });
+      document.querySelector('.lorh-filter-pill').classList.add('active');
+      afficherVehicules(tousVehicules);
+    }
+
+    // Lancer le chargement
+    chargerVehicules();
+
+  </script>
+</body>
+</html>
