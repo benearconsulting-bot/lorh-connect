@@ -70,7 +70,7 @@ a  { color: inherit; }
   flex-shrink: 0;
 }
 
-.lorh-nav__logo-img { height: 360px; width: auto; }
+.lorh-nav__logo-img { height: 56px; width: auto; }
 
 .lorh-nav__logo-text {
   font-size: 28px;
