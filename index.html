@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LORH Connect — Transport de marchandises, import-export, achat automobile et pièces auto. Votre partenaire logistique Europe-Afrique.">
+  <title>LORH Connect — Transport · Automobile · Import-Export</title>
+  <link rel="stylesheet" href="css/lorh-global.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <header class="lorh-nav" role="banner">
+    <a href="/" class="lorh-nav__logo" aria-label="LORH Connect — Accueil">
+      <span class="lorh-nav__logo-text">LORH<span>Connect</span></span>
+    </a>
+
+    <nav aria-label="Navigation principale">
+      <ul class="lorh-nav__links">
+        <li><a href="/pages/transport.html">Transport</a></li>
+        <li><a href="/pages/automobile.html">Automobile</a></li>
+        <li><a href="/pages/pieces.html">Pièces auto</a></li>
+        <li><a href="/pages/import-export.html">Import-Export</a></li>
+        <li><a href="/pages/devis.html">Devis</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="lorh-nav__cta">
+      <a href="/pages/devis.html" class="lorh-btn lorh-btn--blue">Devis rapide</a>
+    </div>
+
+    <!-- Burger mobile -->
+    <button class="lorh-burger" aria-label="Menu" aria-expanded="false" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="lorh-mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="/pages/transport.html">🚛 Transport</a>
+    <a href="/pages/automobile.html">🚗 Automobile</a>
+    <a href="/pages/pieces.html">🔧 Pièces auto</a>
+    <a href="/pages/import-export.html">🌍 Import-Export</a>
+    <a href="/pages/devis.html">📋 Demander un devis</a>
+    <a href="/pages/contact.html">✉️ Contact</a>
+    <a href="https://wa.me/2250708908162?text=Bonjour+LORH+Connect%2C+je+souhaite+des+informations." target="_blank" class="lorh-mobile-menu__wa">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section aria-label="Présentation" style="
+      position: relative;
+      min-height: 580px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    ">
+      <!-- Image de fond -->
+      <img src="images/banniere.png" alt=""
+        aria-hidden="true"
+        style="
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        ">
+      <!-- Overlay dégradé navy pour lisibilité du texte -->
+      <div style="
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(13,31,60,0.88) 0%,
+          rgba(13,31,60,0.72) 50%,
+          rgba(13,31,60,0.55) 100%
+        );
+      "></div>
+
+      <!-- Contenu hero -->
+      <div style="position: relative; z-index: 1; padding: 80px 40px 68px; max-width: 780px; margin: 0 auto;">
+        <div class="lorh-hero__tag">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Europe · Afrique · International
+        </div>
+        <h1 class="lorh-hero__title">
+          Votre partenaire <span>logistique</span><br>transport & automobile
+        </h1>
+        <p class="lorh-hero__subtitle">
+          Transport de marchandises, achat automobile, pièces auto et import-export international.<br>
+          Un interlocuteur unique pour tous vos besoins.
+        </p>
+        <div class="lorh-hero__cta">
+          <a href="/pages/devis.html?service=transport" class="lorh-btn lorh-btn--blue">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/></svg>
+            Demander un devis
+          </a>
+          <a href="/pages/automobile.html" class="lorh-btn lorh-btn--ghost">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v5"/><circle cx="7" cy="21" r="2"/><path d="M9 21h6"/><circle cx="17" cy="21" r="2"/></svg>
+            Voir le catalogue
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== STATS ====== -->
+    <div class="lorh-stats" role="region" aria-label="Chiffres clés">
+      <div class="lorh-stats__item">
+        <div class="lorh-stats__num">12+</div>
+        <div class="lorh-stats__label">Pays desservis</div>
+      </div>
+      <div class="lorh-stats__item">
+        <div class="lorh-stats__num">850+</div>
+        <div class="lorh-stats__label">Clients satisfaits</div>
+      </div>
+      <div class="lorh-stats__item">
+        <div class="lorh-stats__num">7</div>
+        <div class="lorh-stats__label">Types de camions</div>
+      </div>
+      <div class="lorh-stats__item">
+        <div class="lorh-stats__num">48h</div>
+        <div class="lorh-stats__label">Délai devis moyen</div>
+      </div>
+    </div>
+
+    <!-- ====== SERVICES ====== -->
+    <section class="lorh-section" aria-labelledby="services-titre">
+      <h2 class="lorh-section__title" id="services-titre">Nos services</h2>
+      <p class="lorh-section__sub">Tout ce dont vous avez besoin, centralisé en un seul endroit</p>
+
+      <div class="lorh-services-grid">
+
+        <a href="/pages/transport.html" class="lorh-service-card">
+          <div class="lorh-service-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 class="lorh-service-card__title">Transport de marchandises</h3>
+          <p class="lorh-service-card__desc">National, international, charges lourdes. 7 types de camions disponibles pour tous vos besoins.</p>
+          <span class="lorh-service-card__link">Voir les camions →</span>
+        </a>
+
+        <a href="/pages/automobile.html" class="lorh-service-card">
+          <div class="lorh-service-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v5"/><circle cx="7" cy="21" r="2"/><path d="M9 21h6"/><circle cx="17" cy="21" r="2"/></svg>
+          </div>
+          <h3 class="lorh-service-card__title">Achat automobile</h3>
+          <p class="lorh-service-card__desc">Importation sur commande, catalogue véhicules, accompagnement administratif complet.</p>
+          <span class="lorh-service-card__link">Voir le catalogue →</span>
+        </a>
+
+        <a href="/pages/pieces.html" class="lorh-service-card">
+          <div class="lorh-service-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+          </div>
+          <h3 class="lorh-service-card__title">Pièces automobiles</h3>
+          <p class="lorh-service-card__desc">Catalogue par marque/modèle, référence OEM, disponibilité stock et devis rapide.</p>
+          <span class="lorh-service-card__link">Rechercher une pièce →</span>
+        </a>
+
+        <a href="/pages/import-export.html" class="lorh-service-card lorh-service-card--featured">
+          <div class="lorh-service-card__icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="lorh-service-card__title">Import-Export international</h3>
+          <p class="lorh-service-card__desc">Sourcing, transit, douane, expédition. Accompagnement de A à Z depuis l'Afrique et l'Europe.</p>
+          <span class="lorh-service-card__link">En savoir plus →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ====== BANNIÈRE DEVIS ====== -->
+    <div class="lorh-section lorh-section--gray">
+      <div class="lorh-devis-banner">
+        <div>
+          <h2 class="lorh-devis-banner__title">Besoin d'un devis rapidement ?</h2>
+          <p class="lorh-devis-banner__sub">Réponse garantie sous 48h · Formulaire en 2 minutes · Tous services</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="/pages/devis.html" class="lorh-btn lorh-btn--blue">Faire une demande →</a>
+          <a href="https://wa.me/2250708908162?text=Bonjour+LORH+Connect%2C+je+souhaite+un+devis." target="_blank" class="lorh-btn lorh-btn--wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== POURQUOI LORH ====== -->
+    <section class="lorh-section" aria-labelledby="pourquoi-titre">
+      <h2 class="lorh-section__title" id="pourquoi-titre">Pourquoi choisir LORH Connect ?</h2>
+      <p class="lorh-section__sub">Une expertise reconnue, un accompagnement personnalisé</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px;margin:0 auto">
+        <div style="text-align:center;padding:24px">
+          <div style="font-size:36px;margin-bottom:12px">🤝</div>
+          <h3 style="font-size:16px;font-weight:600;color:var(--lorh-navy);margin:0 0 8px">Interlocuteur unique</h3>
+          <p style="font-size:14px;color:var(--lorh-gray-600);margin:0">Un seul contact pour tous vos besoins logistiques, transport et automobile.</p>
+        </div>
+        <div style="text-align:center;padding:24px">
+          <div style="font-size:36px;margin-bottom:12px">⚡</div>
+          <h3 style="font-size:16px;font-weight:600;color:var(--lorh-navy);margin:0 0 8px">Réactivité 48h</h3>
+          <p style="font-size:14px;color:var(--lorh-gray-600);margin:0">Devis et réponses garantis sous 48h ouvrées pour toutes vos demandes.</p>
+        </div>
+        <div style="text-align:center;padding:24px">
+          <div style="font-size:36px;margin-bottom:12px">🌍</div>
+          <h3 style="font-size:16px;font-weight:600;color:var(--lorh-navy);margin:0 0 8px">Réseau international</h3>
+          <p style="font-size:14px;color:var(--lorh-gray-600);margin:0">Présence en Europe et en Afrique, partenaires dans plus de 12 pays.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="lorh-footer" role="contentinfo">
+    <div class="lorh-footer__grid">
+      <div>
+        <img src="images/logo.jpeg" alt="LORH Connect" style="height:48px;margin-bottom:14px;filter:brightness(0) invert(1)">
+        <p style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6;max-width:240px">
+          Votre partenaire logistique entre l'Europe et l'Afrique. Transport, automobile, import-export.
+        </p>
+      </div>
+      <div>
+        <div class="lorh-footer__col-title">Services</div>
+        <a href="/pages/transport.html" class="lorh-footer__link">Transport</a>
+        <a href="/pages/automobile.html" class="lorh-footer__link">Automobile</a>
+        <a href="/pages/pieces.html" class="lorh-footer__link">Pièces auto</a>
+        <a href="/pages/import-export.html" class="lorh-footer__link">Import-Export</a>
+      </div>
+      <div>
+        <div class="lorh-footer__col-title">Devis</div>
+        <a href="/pages/devis.html?service=transport" class="lorh-footer__link">Devis transport</a>
+        <a href="/pages/devis.html?service=automobile" class="lorh-footer__link">Demande auto</a>
+        <a href="/pages/devis.html?service=pieces" class="lorh-footer__link">Demande pièces</a>
+        <a href="/pages/devis.html?service=import" class="lorh-footer__link">Devis import-export</a>
+      </div>
+      <div>
+        <div class="lorh-footer__col-title">Contact</div>
+        <a href="/pages/contact.html" class="lorh-footer__link">Nous contacter</a>
+        <a href="https://wa.me/2250708908162" target="_blank" class="lorh-footer__link">WhatsApp</a>
+        <a href="mailto:serviceclient@lorhconnect.com" class="lorh-footer__link">serviceclient@lorhconnect.com</a>
+      </div>
+    </div>
+    <div class="lorh-footer__bottom">
+      <span>© 2025 LORH Connect — Tous droits réservés</span>
+      <span><a href="/pages/mentions-legales.html" class="lorh-footer__link" style="display:inline">Mentions légales</a></span>
+    </div>
+  </footer>
+
+  <!-- ====== WHATSAPP FLOTTANT ====== -->
+  <a href="https://wa.me/2250708908162?text=Bonjour+LORH+Connect%2C+je+souhaite+des+informations+sur+vos+services."
+     target="_blank" rel="noopener noreferrer"
+     class="lorh-wa-float" aria-label="Nous contacter sur WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="lorh-wa-float__label">WhatsApp</span>
+  </a>
+
+  <script src="js/lorh-global.js"></script>
+</body>
+</html>
