@@ -6,33 +6,3 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
-
-[[redirects]]
-  from = "/pages/devis"
-  to = "/devis"
-  status = 301
-
-[[redirects]]
-  from = "/pages/transport"
-  to = "/transport"
-  status = 301
-
-[[redirects]]
-  from = "/pages/automobile"
-  to = "/automobile"
-  status = 301
-
-[[redirects]]
-  from = "/pages/pieces"
-  to = "/pieces"
-  status = 301
-
-[[redirects]]
-  from = "/pages/import-export"
-  to = "/import-export"
-  status = 301
-
-[[redirects]]
-  from = "/pages/contact"
-  to = "/contact"
-  status = 301
